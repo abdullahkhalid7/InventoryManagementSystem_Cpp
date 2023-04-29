@@ -21,7 +21,7 @@ void staff()
     cout << "staff" << endl;
 }
 
-int login()
+int adminLogin()
 {
     cout << "login" << endl;
     int id;
@@ -39,9 +39,28 @@ int login()
     }
 }
 
+int staffLogin()
+{
+    cout << "login" << endl;
+    int id;
+    cout << "Enter your id: ";
+    cin >> id;
+    if(id == 456)
+    {
+        cout << "Login successful!" << endl;
+        return 1;
+    }
+    else
+    {
+        cout << "Login failed!" << endl;
+        return 0;
+    }
+}
+
 void salaries()
 {
-    cout << "salaries" << endl;
+    cout << "1. view salaries" << endl;
+    cout << "2. update salaries" << endl;
 }
 
 void add_remove_employees()
@@ -51,7 +70,9 @@ void add_remove_employees()
 
 void update_inventory()
 {
-    cout << "update_inventory" << endl;
+    cout << "1. check inventory" << endl;
+    cout << "2. update inventory" << endl;
+    cout << "3. add new item" << endl;
 }
 
 int main()
@@ -69,7 +90,7 @@ int main()
     switch(choice)
     {
         case 1:
-            login_status = login();
+            login_status = adminLogin();
             if(login_status == 0)
             {
                 cout << "Login failed!" << endl;
@@ -79,9 +100,10 @@ int main()
             {
                 admin();
             }
+            login_status = 0;
             break;
         case 2:
-            login_status = login();
+            login_status = staffLogin();
             if(login_status == 0)
             {
                 cout << "Login failed!" << endl;
@@ -91,6 +113,7 @@ int main()
             {
                 staff();
             }
+            login_status = 0;
             break;
         // case 3:
         //     login();
