@@ -1,13 +1,22 @@
-Welcome to the Cafe Management System, a C++ based software designed for managing cafe operations with ease. This project was created as a semester project and includes features like an admin account, a staff account, a list of available stock, a section to place orders for more inventory, and employee data like salary and bonus.
+### Inventory Management System
 
-This system is designed to simplify the management of a cafe by providing an intuitive user interface that allows easy navigation and control over the various cafe operations. With an admin account, you can access all the features of the system, including managing inventory, adding or removing items, managing staff, and viewing sales reports.
+This is a semester project developed in C++ for managing inventory in a cafe or any other business that requires 
+inventory management. The system includes an admin account, a staff account, and a list of available stock. The 
+program allows the user to add, update, and delete inventory items, as well as to place orders for more inventory.
+It also stores employee data such as salary and bonus.
 
-The staff account, on the other hand, has limited access, allowing only for order taking and processing. This ensures that only authorized personnel can access sensitive information.
+This is a terminal-based project and does not require any graphical libraries. The program is written to run on 
+Windows 11 and can be compiled and executed using the Dev-C++ IDE.
 
-The system also includes a section to place orders for more inventory, ensuring that you never run out of stock. You can add items to the inventory list, update existing items, and remove items that are no longer available.
+The system includes the following functions:
+- Add inventory
+- Update inventory
+- Delete inventory
+- View inventory
+- Place orders for more inventory
+- View employee data
 
-Employee data like salary and bonus can be managed easily within the system, ensuring that your staff is paid on time and that they receive the correct amount of compensation.
+This project can be extended to include more features such as analytics, customer profiles, loyalty programs, 
+and discounts.
 
-This system is built to run on the latest version of Windows, and you can easily download and run it on the Dev-C++ IDE. The code is well-commented and easy to understand, making it easy for you to modify and customize to your specific needs.
-
-With the Cafe Management System, managing your cafe has never been easier. Download the code today and start taking control of your operations!
+Contributions and suggestions are welcome!
